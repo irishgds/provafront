@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc; /* Cinza médio */
+    color: #333;
+    margin: 20px; /* Margem de espaçamento maior */
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+section {
+    margin-top: 20px; /* Adicionando espaço entre o cabeçalho e o conteúdo */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "•";
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Iris Gregorio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Iris Gregorio</h1>
+        <h2>Desenvolvedora Web</h2>
+    </header>
+
+    <section id="about">
+        <br>
+        <h2>Sobre Mim</h2>
+        <p>Sou uma pessoa tenaz e empática. Busco constantemente melhorar minhas relações interpessoais, pois acredito no poder do entendimento mútuo e da empatia. Encaro a vida como uma jornada de aprendizado contínuo, sempre em busca de soluções e oportunidades para crescer e me desenvolver. A vida é uma eterna mudança, e por isso, me considero resiliente, capaz de enfrentar os desafios com coragem e determinação.</p>
+    <br>
+    </section>
+
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="project">
+            <h3>Programa Simples em HTML</h3>
+            <p>Este é um exemplo de um programa simples em HTML.</p>
+            <img src="imagem1.jpg" alt="Projeto 1">
+            <br>
+        </div>
+        <div class="project">
+            <br>
+            <h3>Dicionário de Mulheres Negras</h3>
+            <p>Um projeto que lista todas as mulheres que fizeram e ainda fazem parte da história do Brasil e do mundo.</p>
+            <img src="imagem2.jpg" alt="Projeto 2">
+            <br>
+        </div>
+        <div class="project">
+            <br>
+            <h3>Contador</h3>
+            <p>Um contador simples feito em HTML, CSS e JavaScript.</p>
+            <div class="contador">
+                <p id="contador">0</p>
+                <button onclick="incrementar()">Incrementar</button>
+                <button onclick="decrementar()">Decrementar</button><br>
+                <br>
+                <img src="imagem3.jpg" alt="Projeto 3">
+                <img src="imagem3.1.jpg" alt="Projeto 3"><br>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <br>
+        <h2>Contato</h2>
+        <p>Nome: Iris Gregorio da Silva</p>
+        <p>Email: iris.g.silva@aluno.senai.br</p>
+        <a href="https://www.google.com.br" target="_blank">Google</a>
+    </footer>
+
+    <script>
+        var contador = 0;
+
+        function incrementar() {
+            contador++;
+            atualizarContador();
+        }
+
+        function decrementar() {
+            contador--;
+            atualizarContador();
+        }
+
+        function atualizarContador() {
+            document.getElementById('contador').textContent = contador;
+        }
+    </script>
+
+</body>
+
+</html>
